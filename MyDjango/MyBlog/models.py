@@ -12,7 +12,7 @@ class Category(models.Model):
     class Meta:
         verbose_name="类别"
         verbose_name_plural=verbose_name
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 class Tag(models.Model):
@@ -21,7 +21,7 @@ class Tag(models.Model):
     class Meta:
         verbose_name="标签"
         verbose_name_plural=verbose_name
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 class Blog(models.Model):
@@ -35,7 +35,7 @@ class Blog(models.Model):
         verbose_name="博客"
         verbose_name_plural=verbose_name
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
 
@@ -49,5 +49,5 @@ class Comment(models.Model):
     class Meta:
         verbose_name="评论"
         verbose_name_plural="评论"
-    def __unicode__(self):
+    def __str__(self):
         return self.content
